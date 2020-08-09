@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>百度搜索框</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="//at.alicdn.com/t/font_695777_jxbzf2vw92fkcsor.js"></script>
+    <style type="text/css">
+        .icon {
+            width: 1em;
+            height: 1em;
+            vertical-align: -0.15em;
+            fill: currentColor;
+            overflow: hidden;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="left">
+            <ul>
+                <li><a href="#">新闻</a></li>
+                <li><a href="#">hao123</a></li>
+                <li><a href="#">地图</a></li>
+                <li><a href="#">视频</a></li>
+                <li><a href="#">贴吧</a></li>
+                <li><a href="#">学术</a></li>
+                <li><a href="#">更多</a></li>
+            </ul>
+        </nav>
+        <nav class="right">
+            <ul>
+                <li><a href="#">高考加油</a></li>
+                <li><a href="#">
+                        <div class="weather"><span>东莞</span><i>云</i><span>31℃</span></div>
+                    </a></li>
+                <li><a href="#">设置</a></li>
+                <li><a href="#">
+                        <div class="user">
+                            <div class="photo">头像</div>
+                            <div class="username">用户名</div>
+                        </div>
+                    </a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            <div class="baidu-search-box">
+                <div class="baidu">
+                    <img src="images/bdlogo.gif" alt="">
+                </div>
+                <div class="input-wrapper">
+                    <div class="search-list" id="searchList">
+                        <hr>
+                        <ul>
+                            <li><a href="#">如何学前端</a><span>删除</span></li>
+                            <li><a href="#">如何学CSS</a><span>删除</span></li>
+                            <li><a href="#">如何布局</a><span>删除</span></li>
+                            <li><a href="#">如何学JavaScript</a><span>删除</span></li>
+                            <li><a href="#">如何学vue</a><span>删除</span></li>
+                        </ul>
+                    </div>
+                    <input type="text" id="keyword">
+                    <div class="icon-wrapper">
+                        <svg class="icon" aria-hidden="true">
+                            <use xlink:href="#icon-mic"></use>
+                        </svg>
+                        <svg class="icon" aria-hidden="true">
+                            <use xlink:href="#icon-camera"></use>
+                        </svg>
+                    </div>
+                    <a href="" class="search">百度一下</a>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+<script>
+    keyword.addEventListener('input', (e) => {
+
+        if (keyword.value) {
+            searchList.classList.add('active')
+            keyword.classList.add('active')
+
+        } else {
+            searchList.classList.remove('active')
+            keyword.classList.remove('active')
+
+        }
+    })
+    keyword.addEventListener('blur', (e) => {
+        searchList.classList.remove('active')
+        keyword.classList.remove('active')
+        inputwrapper.classList.remove('active')
+    })
+    searchList.addEventListener('mouseover', (e) => {
+        if (e.target.tagName.toLowerCase() === 'li') {
+            console.log(1111)
+            console.log(e.target)
+            e.target.querySelector('span').classList.add('visible')
+
+            console.log(e.target.querySelector('span'))
+        }
+    })
+    searchList.addEventListener('mouseout', (e) => {
+        if (e.target.tagName.toLowerCase() === 'li') {
+            console.log(1111)
+            console.log(e.target)
+            e.target.querySelector('span').classList.remove('visible')
+
+            console.log(e.target.querySelector('span'))
+        }
+    })
+</script>
+
+</html>
