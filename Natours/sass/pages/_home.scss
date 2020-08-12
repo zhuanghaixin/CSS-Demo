@@ -2,4 +2,19 @@
   background-color: $color-grey-light-1;
   padding: 15.625em 0;
   margin-top: -20vh;
+  //clip-path: polygon(0 20vh, 100% 0, 100% calc(100% - 20vh), 0 100%);
+}
+.section-features{
+  padding:12.5em 0;
+  margin-top: -10rem;
+
+  background-image: linear-gradient(to right, rgba($color-primary-light, .8), rgba($color-primary-dark, .8)),
+  url("../img/nat-4.png");
+  background-size: cover;
+
+  //clip-path: polygon(0 20vh, 100% 0, 100% calc(100% - 20vh), 0 100%);
+  transform:skewY(-7deg);
+  &>*{
+    transform:skewY(7deg);
+  }
 }
