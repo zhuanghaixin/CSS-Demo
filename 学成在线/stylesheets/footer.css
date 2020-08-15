@@ -1,0 +1,42 @@
+/* footer 模块 */
+.footer {
+    height: 41.5rem;
+    background-color: #fff;
+}
+.footer .container {
+    padding-top: 35px;
+}
+.footer__copyright {
+    float: left;
+}
+.footer__copyright p {
+    font-size: 12px;
+    color: #666;
+    margin: 20px 0 15px 0;
+}
+.footer__copyright .footer__app {
+    display: block;
+    width: 118px;
+    height: 33px;
+    border: 1px solid #00a4ff;
+    text-align: center;
+    line-height: 33px;
+    color: #00a4ff;
+    font-size: 16px;
+}
+.foooter__links {
+    float: right;
+}
+.footer__links dl {
+    float: left;
+    margin-left: 100px;
+}
+.footer__links dl dt {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 5px;
+}
+.footer__links dl dd a {
+    color: #333;
+    font-size: 12px;
+}

@@ -1,0 +1,44 @@
+:root{
+    box-sizing:border-box;
+}
+*,*::before,*::after{
+    box-sizing:inherit;
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+}
+html {
+    font-size: 62.5%;
+}
+body{
+    font-family: "Microsoft Yahei",Helvetica,Arial,sans-serif;
+}
+ul,li{
+    list-style:none;
+}
+/*utilites*/
+.u-center-text{
+    text-align: center;
+}
+/* mixins */
+.clearfix::after{
+    content:'';
+    display: block;
+    clear:both;
+}
+/* typography */
+.heading__secondary{
+    font-size:var(--default-font-size-large);
+    color:var(--color-black-title);
+}
+.heading-secondary--white{
+    color:var(--color-white);
+}
+.heading__tertiary{
+    font-size:var(--default-font-size-big);
+}
+.heading-paragraph{
+    font-size:var(--default-font-size-small);
+}

@@ -1,0 +1,25 @@
+body{
+    min-width:1200px;
+}
+.container{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.main__goods{
+    width: 120rem;
+}
+.main__card{
+    float:left;
+}
+
+/*.main__card:not(:last-child){*/
+/*    margin-right: 1.5rem;*/
+/*    margin-bottom: 1.5rem;*/
+/*}*/
+
+.main__card:not(:nth-child(5n)){
+    margin-right: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+

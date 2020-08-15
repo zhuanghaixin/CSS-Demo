@@ -1,0 +1,103 @@
+.header{
+    font-size:var(--default-font-size-medium);
+    background-color: var(--color-white-dark);
+}
+.header>.container{
+    height:10.1rem ;
+}
+.header>.container>*{
+    position: relative;
+    top:50%;
+    transform: translateY(-50%);
+    float:left;
+}
+/*logo*/
+
+.logo{
+   background-image:url("../images/logo.png");
+    background-repeat:no-repeat;
+    background-position: center;
+    height: 4.1rem;
+    width: 19.5rem;
+    margin-right: 7.9rem;
+}
+
+/* header-nav*/
+.header__nav{
+    font-size:1.8rem;
+
+}
+.header__nav ul{
+    margin-right: 8.6rem;
+}
+.header__nav ul li{
+    float: left;
+}
+.header__nav ul li:not(:last-child){
+    margin-right: 2rem;
+}
+
+.header__nav a{
+    display: block;
+color:var(--color-black-light);
+    padding: 0.9rem ;
+    border-bottom:2px solid transparent;
+}
+.header__nav a:hover{
+    border-bottom:2px solid var(--color-blue-light);
+
+}
+
+
+/*header-search*/
+.header__search{
+    width: 40.1rem;
+    height: 4.2rem;
+
+
+}
+.header__input{
+    float:left;
+    height: 4.2rem;
+    width: calc(100% - 5rem);
+    outline:none ;
+    padding-left: 1em;
+    border:1px solid var(--color-blue-light);
+
+}
+.header__icon{
+    float:left;
+    display: inline-block;
+    width: 5rem;
+    height: 4.2rem;
+    /*background-color: #f00;*/
+    background:url("../images/btn.png") center no-repeat;
+    background-size:cover;
+}
+
+
+/* header-user*/
+.header>.container>.header__user{
+    float:right;
+    margin-right: 3.7rem;
+    height: 3.3rem;
+}
+.header__avatar{
+    display: inline-block;
+    background:url("../images/user.png") center no-repeat;
+    width: 3.3rem;
+    height: 100%;
+    vertical-align: middle;
+
+}
+.header__id{
+
+    color:var(--color-gray-a-1);
+
+}
+.header__id:hover{
+    color:var(--color-blue-light);
+
+}
+
+

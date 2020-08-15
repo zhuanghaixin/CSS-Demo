@@ -1,0 +1,36 @@
+
+/*navbar*/
+.main__category-h2{
+    float:left;
+    color:var(--color-black-title);
+}
+.main__category-nav{
+    /*text-align: center;*/
+    height: 6.6rem;
+    line-height: 6.6rem;
+    color:var(--color-gray-link);
+    position: relative;
+}
+.main__category-navbar{
+    float:left;
+    position: relative;
+    left:calc(50% - 64px);
+    transform: translateX(-50%);
+
+}
+
+.main__category-navbar ul li{
+    float:left;
+    margin:0 2.28em;
+
+}
+.main__category-navbar ul li a{
+    color:inherit;
+}
+.main__category-navbar ul li a:hover{
+    color:var(--color-blue-light);
+}
+.main__category-nav>a{
+    float:right;
+    color:inherit;
+}
