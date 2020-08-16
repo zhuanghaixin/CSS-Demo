@@ -1,0 +1,276 @@
+.main {
+    font-size: var(--default-font-size-medium);
+    background-color: var(--color-white-dark);
+}
+
+.main__banner {
+    background-color: var(--color-purple);
+    height: 42rem;
+
+}
+
+.main > .main__banner > .container {
+    position: relative;
+
+}
+
+.main > .container {
+    background-color: var(--color-white-dark);
+    position: relative;
+}
+
+/*main__swiper*/
+.main__swiper {
+    height: 42rem;
+    width: 120rem;
+    position: relative;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.main__swiper-box {
+    position: absolute;
+    height: 42rem;
+    transform: translateX(0rem);
+    width: 10000000rem;
+    /* 宽度不能写死，要不然以后多加一个模块，会出现问题   */
+}
+
+.main__swiper-box li {
+    float: left;
+}
+
+.main__swiper-box a {
+    display: block;
+    height: 42rem;
+    width: 120rem;
+}
+
+.main__swiper-box img {
+    width: 100%;
+    height: 100%;
+}
+
+.main__swiper-btn {
+    width: 4em;
+    height: 4em;
+    background-color: hsla(0, 50%, 0%, .2);
+    color:var(--color-white);
+    text-align: center;
+    line-height: 4em;
+    position: absolute;
+    top:50%;
+    transform: translateY(-50%);
+    z-index:30;
+
+}
+.main__swiper-btn:hover{
+    cursor: pointer;
+    background-color: hsla(0, 50%, 0%, .6);
+}
+.main__swiper-btn--left{
+    border-bottom-right-radius:4em;
+    border-top-right-radius:4em;
+    left:19rem;
+}
+.main__swiper-btn--right{
+    border-bottom-left-radius:4em;
+    border-top-left-radius:4em;
+    left:88.3rem;
+
+}
+.main__pagination{
+    position: absolute;
+    bottom:3%;
+    left:50%;
+    transform: translateX(-64%);
+    background:  hsla(0, 50%, 0%, .1);
+    border-radius: 2em;
+
+
+}
+.main__pagination-item{
+    background-color: hsla(0, 50%, 0%, .3);
+    display: block;
+    height: 1em;
+    width: 1em;
+    margin: 1em;
+    border-radius:2em;
+    float:left;
+}
+.main__pagination-item.main__pagination-item--active{
+    width: 2em;
+    background-color: var(--color-white);
+}
+.main__pagination-item:hover{
+    background-color: var(--color-white);
+}
+
+
+
+/* main__nav-menu*/
+.main__nav-menu {
+    position: absolute;
+    z-index: 20;
+    top: 0;
+    left: 0;
+    width: 19rem;
+    height: 100%;
+    background-color: hsla(0, 50%, 0%, .1);
+    /*background-color:rgba(0,0,0,.3);*/
+    color: var(--color-white-dark-2);
+}
+
+.main__menu-wrap {
+    /*padding: 1em;*/
+}
+
+.main__nav-menu-item {
+    line-height: 3.15em;
+}
+
+.main__nav-menu-item:hover {
+    background-color: hsla(0, 100%, 0%, .1);
+}
+
+.main__nav-menu-item a {
+    display: block;
+    color: inherit;
+    width: 100%;
+}
+
+.main__nav-menu-item:hover a {
+    color: var(--color-blue-light);
+}
+
+.main__nav-menu-item i {
+    float: right;
+    margin-right: 1em;
+}
+
+/*main__course-table*/
+.main__course-table {
+    position: absolute;
+    z-index: 20;
+    top: 5rem;
+    right: 0;
+    width: 23.1rem;
+    background-color: var(--color-white);
+
+}
+
+.main__course-title {
+    background-color: var(--color-blue-light-1);
+    padding: .8em;
+}
+
+.main__list-box {
+    padding: 1.14em;
+
+}
+
+.main__list-item {
+    margin-top: .5em;
+}
+
+.main__list-item:not(:last-child) {
+    padding-bottom: 1.14em;
+    border-bottom: 1px solid var(--color-white-dark-2);
+}
+
+.main__list-item a {
+    color: var(--color-black-a);
+    font-size: var(--default-font-size-big);
+}
+
+.main__list-item p {
+    color: var(--color-gray-p);
+    font-size: var(--default-font-size-small);
+}
+
+.main__list-item:hover {
+    color: var(--color-blue-light);
+
+}
+
+.main__list-item:hover a, .main__list-item:hover p {
+    color: inherit;
+}
+
+.btn.btn--border {
+
+    display: block;
+    border: 1px solid var(--color-blue-light);
+    width: 20rem;
+    font-size: var(--default-font-size-big);
+    font-weight: bold;
+    padding: .8em;
+    color: var(--color-blue-light);
+    margin: 0 auto 1em;
+}
+
+/* main__nav */
+.main__nav {
+    margin-top: 0.5em;
+    color: var(--color-black-light);
+    background: var(--color-white);
+    box-shadow: 0px 2px 3px 0px rgba(118, 118, 118, 0.2);
+
+}
+
+.main__navbar {
+    float: left;
+}
+
+.main__navbar ul {
+
+}
+
+.main__navbar ul li {
+    float: left;
+    position: relative;
+}
+
+.main__navbar ul li:not(:first-child):after {
+    content: ' ';
+    display: inline-block;
+    height: 1em;
+    width: 1px;
+    background: #b0b0b0;
+    position: absolute;
+    top: 1em;
+    left: 0;
+
+}
+
+.main__nav a {
+    display: block;
+    color: inherit;
+    float: right;
+    padding: 0.75em 2em;
+    font-size: var(--default-font-size-big);
+    line-height: 1.5;
+
+}
+
+.main__nav a:hover {
+    color: var(--color-blue-light);
+}
+
+.btn.btn--text:hover {
+    color: var(--color-blue-light);
+}
+
+.btn.btn--text {
+    font-size: var(--default-font-size-medium);
+}
+
+
+
+
+
+
+
+
+
+

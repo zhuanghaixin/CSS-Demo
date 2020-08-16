@@ -1,0 +1,25 @@
+.main__sidebar{
+    position:fixed;
+    background: var(--color-white);
+
+    /*top:0;*/
+    /*transform:translateX(-100%);*/
+
+    /*top:0%*/
+    /*left:0;*/
+    /*left: 50%;*/
+    /*margin-left: 600px;*/
+    /*z-index:100;*/
+    top:30%;
+    right:0;
+    right: 50%;
+    padding: 1em;
+    margin-right: 610px;
+    font-size: var(--default-font-size-small);
+}
+.main__sidebar ul li{
+    padding: .5em 0;
+}
+.main__sidebar ul li:hover{
+    color:var(--color-blue-light);
+}
