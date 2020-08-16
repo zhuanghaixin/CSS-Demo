@@ -1,0 +1,139 @@
+body{
+    min-width:1220px;
+    background: #b5bebf;
+}
+.container{
+    width: 1220px;
+    margin: 0 auto;
+
+}
+
+/*heaader*/
+.header{
+    height: 100px;
+    background: #000;
+    padding-top:0.1px;
+
+}
+
+.header>.container{
+    height: 40px;
+
+    margin: 30px auto;
+}
+
+.header__logo{
+    display: block;
+    float:left
+}
+
+
+.header__nav{
+    float:left;
+}
+.header__nav ul li{
+    float:left;
+    margin:0 25px;
+}
+
+.header__nav ul li a{
+    display: block;
+    color:#b5bebf;
+    height: 40px;
+    line-height: 40px;
+}
+.header__nav ul li a:hover{
+    color:#fff;
+}
+.header__userInfo{
+    float:right;
+    height: 40px;
+    line-height: 40px;
+
+}
+.header__avatar{
+    float:left;
+    display: inline-block;
+    margin-right: 30px;
+}
+
+.header__avatar-icon{
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+    background-image:url(../image/account-icon.png);
+    background-norepea:no-repeat;
+    background-position:0px 0px;
+    vertical-align:middle;
+
+
+}
+.header__shoppingcart{
+    float:right;
+    display: inline-block;
+
+}
+.header__cart-icon{
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+    background-image:url(../image/account-icon.png);
+    background-norepeat:no-repeat;
+    background-position:0px 20px;
+    vertical-align:middle;
+}
+
+.header__count{
+
+    color:#fff;
+    background: #999;
+    line-height: 14px;
+    padding: 0 5px;
+    border-radius: 2em;
+
+}
+
+
+/*main*/
+.main{
+    background: #ededed;
+}
+/* main__subnav*/
+.main__subnav{
+    height: 88px;
+    line-height: 88px;
+}
+
+.main__subnav ul li{
+    float:left;
+}
+
+.main__subnav ul li:not(:last-child){
+    margin-right: 40px;
+}
+.main__subnav ul li a{
+    color:inherit;
+}
+
+/* main__banner*/
+.main__banner{
+    height: 500px;
+    background: url("../image/main-banner.png")  center center no-repeat;
+    border-radius:1em;
+
+}
+
+
+/* main__product*/
+
+/* main__features*/
+
+/* main__message*/
+
+
+
+
+/*footer*/
+.footer{
+    background: #fff;
+}
