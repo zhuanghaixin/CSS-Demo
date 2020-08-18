@@ -1,0 +1,36 @@
+
+:root{
+    box-sizing:border-box;
+}
+*,*::before,*::after{
+    box-sizing:inherit;
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+}
+
+body{
+    font:16px "Microsoft Yahei",Helvetica,Arial,sans-serif;
+}
+ul,li{
+    list-style:none;
+}
+img{
+    vertical-align: middle;
+}
+/*utilites*/
+.u-center-text{
+    text-align: center;
+}
+
+/* mixins */
+.clearfix::after{
+    content:'';
+    display: block;
+    clear:both;
+}
+
+/* typography */
+
