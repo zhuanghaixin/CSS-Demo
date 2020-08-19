@@ -366,6 +366,16 @@ border-bottom:1px solid #d72502;
 .main__story{
     margin-bottom: 70px;
 }
+.main__story-heading{
+    height: 40px;
+}
+.main__story-heading .heading--secondary{
+    float:left;
+}
+.main__story-heading a{
+    float:right;
+    color:inherit;
+}
 .main__story ul{
 
 }
