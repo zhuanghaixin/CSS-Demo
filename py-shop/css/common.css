@@ -185,6 +185,7 @@ color: #c81623;
 .mainnav{
     height: 45px;
     border-bottom:2px solid  #e60012;
+    margin-bottom: 10px;
 }
 .mainnav__dropdown{
     background-color: #b1191a;
@@ -267,6 +268,7 @@ color: #c81623;
     margin-right: 48px;
 }
 .mainnav__navitems li a{
+    display: block;
     line-height:47px ;
     height: 47px;
     font-size: 16px;
@@ -281,10 +283,13 @@ color: #c81623;
 /*footer*/
 .footer{
     background: #f5f5f5;
+    padding-top: 30px;
+    height: 415px;
 }
 /*footer__top*/
 .footer__top{
     height: 110px;
+    border-bottom:1px solid #ededed;
 }
 .footer__top-nav{
 
@@ -294,19 +299,96 @@ color: #c81623;
 }
 .footer__top-nav ul li{
     float:left;
+    width: 240px;
+    height: 50px;
+    padding-left: 40px;
+}
+.footer__icon{
+    float:left;
+    width: 50px;
+    height: 50px;
+    background: url("../images/icons.png") center no-repeat;
+    margin-right: 10px;
+}
+.icon-1{
+    background-position: 50% -3px;
+}
+.icon-2{
+    background-position: 50% -53px;
+
+}
+.icon-3{
+    background-position: 50% -105px;
+}
+.icon-4{
+    background-position: 50% -158px;
+}
+.icon-5{
+    background-position: 50% -210px;
 }
 
+
+
+
+
+
+.footer__top-nav ul li h4{
+    font-size: 14px;
+    font-weight: bold;
+    color:#333;
+}
+.footer__top-nav ul li p{
+    font-size: 12px;
+    color:#666;
+
+}
 
 /*footer__middle*/
 
 .footer__middle{
+    height: 190px;
+    border-bottom:1px solid #ededed;
+    padding-top: 20px;
 
+}
+.footer__middle dl{
+    float:left;
+    width: 200px;
+    padding-left: 50px;
+
+}
+.footer__middle dl:last-child{
+    text-align: center;
+}
+.footer__middle dl:last-child dt{
+    /*margin-bottom: 20px;*/
+}
+.footer__middle dl:last-child img{
+    margin-bottom: 10px;
+}
+.footer__middle dt{
+    font-size: 16px;
+    line-height: 16px;
+
+    color:#333;
+    margin-bottom: 14px;
+
+}
+.footer__middle dd{
+    font-size: 12px;
+    line-height: 12px;
+    color:#333;
+}
+.footer__middle dd:not(:last-child){
+    margin-bottom: 8px;
 }
 /*footer__bottom*/
 .footer__bottom{
     height:120px ;
     padding-top: 0.1px;
     text-align: center;
+    padding-bottom:0.1px;
+    background: #f5f5f5;
 
 }
 .footer__bottom-nav{
@@ -332,7 +414,9 @@ color: #c81623;
     margin-top: 15px;
 }
 .footer__bottom-beian{
+    display: block;
     margin-top: 10px;
+    margin-bottom: 40px;
 }
 
 
