@@ -59,6 +59,14 @@ body {
     color: #666
 }
 
+/*浮动*/
+.fl{
+    float:left;
+}
+.fr{
+    float:right;
+}
+
 .hide,
 .none {
     display: none
