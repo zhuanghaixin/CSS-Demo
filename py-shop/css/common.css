@@ -284,8 +284,14 @@ color: #c81623;
 .footer{
     background: #f5f5f5;
     padding-top: 30px;
-    height: 415px;
+
+
 }
+.footer .container{
+    padding-bottom:0.1px;
+}
+
+
 /*footer__top*/
 .footer__top{
     height: 110px;
@@ -387,8 +393,7 @@ color: #c81623;
     height:120px ;
     padding-top: 0.1px;
     text-align: center;
-    padding-bottom:0.1px;
-    background: #f5f5f5;
+    margin-bottom: 40px;
 
 }
 .footer__bottom-nav{
@@ -416,7 +421,7 @@ color: #c81623;
 .footer__bottom-beian{
     display: block;
     margin-top: 10px;
-    margin-bottom: 40px;
+
 }
 
 
