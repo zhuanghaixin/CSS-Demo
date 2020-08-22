@@ -1,0 +1,72 @@
+
+
+/*秒杀*/
+.header__second-kill{
+    width: 56px;
+    height: 26px;
+    position: absolute;
+    top:43px;
+    left:199px;
+    padding-left:20px;
+    border-left:2px solid #c81e26;
+}
+
+.mainnav__navitems-left{
+    padding-left: 25px;
+}
+.mainnav__navitems-left ul{
+
+}
+.mainnav__navitems-left ul li{
+    float:left;
+    margin-left: 55px;
+}
+
+.mainnav__navitems-left ul li a{
+    height: 45px;
+    line-height: 45px;
+    font-size: 16px;
+    color:#000;
+}
+.mainnav__navitems-right{
+    margin-left: 55px;
+}
+.mainnav__navitems li a{
+    color:#666;
+    font-size:14px;
+}
+
+.mainnav__navitems li:last-child a::after{
+
+    content:'\e6ec';
+    font-family:'iconfont';
+}
+
+.mainnav{
+    margin-bottom: 0px;
+}
+.main_sk-banner{
+    height: 120px;
+    margin-bottom: 27px;
+
+}
+.main__sk-cards ul{
+
+}
+.main__sk-cards ul li{
+    float:left;
+    width: 290px;
+    height: 458px;
+    border:1px solid transparent;
+    overflow: hidden;
+    margin-right: 13px;
+    margin-bottom: 12px;
+}
+.main__sk-cards ul li:nth-child(4n){
+    margin-right: 0px;
+}
+
+.main__sk-cards ul li:hover{
+    border:1px solid #c81e26;
+}
+
