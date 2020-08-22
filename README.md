@@ -5,3 +5,4 @@
 ## Natours [预览链接](https://zhuanghaixin.github.io/CSS-Demo/Natours/)
 ## OPPO手机 [预览链接](https://zhuanghaixin.github.io/CSS-Demo/oppo%E6%89%8B%E6%9C%BA%E5%AE%98%E7%BD%91/)
 ## 黑马官网  [预览链接](https://zhuanghaixin.github.io/CSS-Demo/%E9%BB%91%E9%A9%AC%E5%AE%98%E7%BD%91/)
+## 品优购 [预览链接](https://zhuanghaixin.github.io/CSS-Demo/py-shop/)

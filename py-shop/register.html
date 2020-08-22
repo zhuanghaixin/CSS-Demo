@@ -39,11 +39,11 @@
             </div>
             <div class="main__register-area">
                 <div class="main__register-form">
-                    <form action="">
+                    <form action="http://study.susuk.com.cn/user/register" method="post">
                         <ul>
                             <li>
                                 <label for="phone-number">手机号：</label>
-                                <input type="text" id="phone-number">
+                                <input type="text" id="phone-number" name="tel">
                                 <span  class="status--error"><i class="icon--error"></i> 手机号码格式不正确，请从新输入</span>
                             </li>
                             <li>
@@ -52,7 +52,7 @@
                                 <span class="status--success"><i class="icon--success"></i> 还剩60秒</span></li>
                             <li class="login-password">
                                 <label for="login-password"> 登陆密码：</label>
-                                <input type="password" id="login-password">
+                                <input type="password" id="login-password" name="password">
                                 <span class="status--error"><i class="icon--error"></i>密码不少于6位数，请从新输入</span>
                             </li>
                             <li class="security-extent">
