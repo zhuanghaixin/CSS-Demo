@@ -4,6 +4,9 @@
 
 }
 
+
+/*main__content*/
+
 .main__content {
     height: 455px;
     margin-left: 209px;
@@ -24,6 +27,7 @@
     width: 250px;
     height: 100%;
     border: 1px solid #e8e8e7;
+    overflow: hidden;
 
 }
 
@@ -163,8 +167,156 @@
 }
 
 
+.main__newsflash-bargain img {
+    width: 248px;
+}
 
 
-.main__newsflash-bargain {
+/*main__recommend*/
+.main__recommend{
+    height: 162px;
 
+
+}
+.main__recommend-hd{
+    width: 206px;
+    height: 163px;
+    background-color: #5c5251;
+    text-align: center;
+
+}
+.main__recommend-hd img{
+    margin-top: 30px;
+}
+.main__recommend-bd{
+
+}
+.main__recommend-bd ul li{
+    float: left;
+    position: relative;
+}
+
+.main__recommend-bd ul li:nth-child(-n+4)::after{
+    content:'';
+    display: block;
+    position: absolute;
+    top:20px;
+    width: 1px;
+    height: 123px;
+    background: #ddd;
+}
+
+
+
+/*楼层区*/
+.main__floor{
+}
+
+.main__floor-jiadian{
+
+}
+.main__floor-hd{
+    height: 35px;
+    border-bottom:2px solid #c81623;
+    margin-top: 30px;
+}
+.main__floor-hd h3{
+
+    font-size: 18px;
+
+    line-height: 27px;
+    line-height: 27px;
+    color: #c81623;
+
+}
+
+
+.main__floor-hd .tab-lists ul{
+    margin: 0 auto;
+}
+.main__floor-hd .tab-lists ul li{
+    float:left;
+    height: 27px;
+    line-height: 27px;
+
+}
+.main__floor-hd .tab-lists ul li a{
+    margin: 0 15px;
+}
+.main__floor-bd {
+    height: 360px;
+    width: 100%;
+
+}
+
+.main__floor-bd .tab-listitem{
+
+
+
+}
+.main__floor-bd .tab-listitem div{
+
+    float:left;
+    height: 360px;
+}
+.main__floor-bd .tab-listitem a{
+    display: block;
+}
+
+.col--210{
+    width: 210px;
+
+    text-align: center;
+
+}
+.col--210 ul{
+    height: 106px;
+}
+
+.col--210 ul{
+
+}
+.col--210 ul li{
+    float:left;
+    width: 50%;
+    text-align: center;
+
+}
+.col--210 ul li a{
+    width: 86px;
+    display: block;
+    margin: 0 auto;
+    height: 32px;
+    line-height: 32px;
+    border-bottom:1px solid #ededed;
+
+}
+
+.col--210 a.photo{
+    width: 100%;
+}
+.col--210 a.photo img{
+    width: 100%;
+
+}
+
+
+.col--329{
+    width: 329px;
+    /*background: #00f;*/
+
+}
+.col--221{
+    width: 221px;
+    /*background: #0f0;*/
+    border-right: 1px solid #ccc;
+}
+.col--219{
+    width: 219px;
+    /*background: #ff0;*/
+    /*border-right: 1px solid #ccc;*/
+
+}
+.a{
+    border-bottom: 1px solid #ccc;
 }
