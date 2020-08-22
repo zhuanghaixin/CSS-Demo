@@ -1,0 +1,137 @@
+/*注册*/
+
+.header>.container{
+    height: 82px;
+
+    border-bottom:2px solid #c81e26;
+}
+
+.main{
+
+}
+.main__register{
+    height: 520px;
+    border:1px solid #dfdfdf;
+}
+
+.main__register-header{
+    height: 41px;
+    background: #ececec;
+    line-height: 41px;
+}
+.main__register-header h2{
+    font-size: 18px;
+    margin-left: 10px;
+}
+.main__register-header span{
+    margin-right: 10px;
+}
+.main__register-header a{
+    color:#c81623;
+}
+
+.main__register-area{
+
+}
+
+.main__register-form{
+    width: 600px;
+    margin: 50px auto 0;
+    /*border:1px solid red;*/
+}
+.main__register-form ul{
+
+}
+.main__register-form ul li{
+    height: 36px;
+    margin-bottom: 20px;
+}
+.main__register-form ul li span{
+    margin-left: 10px;
+}
+.main__register-form ul label{
+    display: inline-block;
+    width: 100px;
+    height: 36px;
+    line-height: 36px;
+    text-align: right;
+    color:#4d4d4d;
+
+}
+.main__register-form ul input{
+    width: 240px;
+    height: 36px;
+    border: solid 1px #999999;
+    padding-left: 10px;
+}
+.main__register-form ul input[type='checkbox']{
+    width: 16px;
+    height: 16px;
+    vertical-align: middle;
+
+}
+
+.register-agree{
+    padding-left: 100px;
+}
+.register-agree a{
+    color:#1ba1e6;
+}
+.register-complete{
+    padding-left: 100px;
+}
+.register-complete input[type='submit']{
+    display: block;
+    width: 200px;
+    height: 34px;
+    color:#fff;
+    font-size:14px;
+    background: #c81623;
+    line-height: 34px;
+}
+
+
+.status--error{
+    color:#c81623;
+}
+.status--success{
+
+    color:#40b83f;
+}
+.icon--error{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background: url("../images/error.png") no-repeat;
+    vertical-align: middle;
+}
+.icon--success{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background: url("../images/success.png") no-repeat;
+    vertical-align: middle;
+}
+
+/*安全程度*/
+.main__register-form ul li.security-extent {
+    padding-left: 175px;
+    height: 14px;
+
+}
+i[class*=security-extent]{
+    color: #fff;
+    padding:0 10px
+}
+i.security-extent--weak{
+    background: #de1111;
+}
+i.security-extent--middle{
+    background: #40b83f;
+}
+i.security-extent--strong{
+    background: #f79100;
+
+}
+
+

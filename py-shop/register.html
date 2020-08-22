@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>品优购商城注册页</title>
+
+
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
+
+    <link rel="stylesheet" href="iconfont/iconfont.css">
+    <!--    CSS初始化样式文件-->
+    <link rel="stylesheet" href="css/base.css">
+    <!--    CSS公共样式文件-->
+    <link rel="stylesheet" href="css/common.css">
+    <!-- CSS 首页样式   -->
+    <link rel="stylesheet" href="css/register.css">
+
+</head>
+<body>
+
+<header class="header">
+    <div class="container">
+        <div class="header__logo">
+            <h1>
+                <a href="#" title="品优购商城">品优购商城</a>
+            </h1>
+        </div>
+    </div>
+</header>
+<main class="main">
+    <div class="container">
+        <section class="main__register">
+            <div class="main__register-header">
+                <h2 class="fl">注册用户</h2>
+                <span class="fr">我有账号，去 <a href="login.html">登录</a></span>
+            </div>
+            <div class="main__register-area">
+                <div class="main__register-form">
+                    <form action="">
+                        <ul>
+                            <li>
+                                <label for="phone-number">手机号：</label>
+                                <input type="text" id="phone-number">
+                                <span  class="status--error"><i class="icon--error"></i> 手机号码格式不正确，请从新输入</span>
+                            </li>
+                            <li>
+                                <label for="message-check"> 短信验证码：</label>
+                                <input type="text" id="message-check">
+                                <span class="status--success"><i class="icon--success"></i> 还剩60秒</span></li>
+                            <li class="login-password">
+                                <label for="login-password"> 登陆密码：</label>
+                                <input type="password" id="login-password">
+                                <span class="status--error"><i class="icon--error"></i>密码不少于6位数，请从新输入</span>
+                            </li>
+                            <li class="security-extent">
+                                <span>安全程度</span>
+                                <i class="security-extent--weak">弱</i>
+                                <i class="security-extent--middle">中</i>
+                                <i class="security-extent--strong">强</i>
+                            </li>
+                            <li>
+                                <label for="confirmed-password">确认密码：</label>
+                                <input type="password" id="confirmed-password">
+                                <span class="status--error"><i class="icon--success"></i>   密码不一致，请从新输入</span>
+                            </li>
+                            <li class="register-agree">
+                                <input type="checkbox" name="agree" id="agree">
+                                <label for="agree"> 同意协议并注册</label>
+                                <a href="#">《知果果用户协议》></a>
+                            </li>
+                            <li class="register-complete"><input type="submit" value="完成注册"></li>
+                        </ul>
+                    </form>
+
+                </div>
+            </div>
+        </section>
+
+    </div>
+</main>
+
+<footer class="footer">
+    <div class="container">
+        <section class="footer__bottom">
+            <nav class="footer__bottom-nav">
+                <ul class="clearfix">
+                    <li><a href="#">关于我们</a></li>
+                    <li><a href="#">联系我们</a></li>
+                    <li><a href="#">联系客服</a></li>
+                    <li><a href="#">商家入驻</a></li>
+                    <li><a href="#">营销中心</a></li>
+                    <li><a href="#">手机品优购 </a></li>
+                    <li><a href="#">友情链接 </a></li>
+                    <li><a href="#">销售联盟 </a></li>
+                    <li><a href="#">品优购社区</a></li>
+                    <li><a href="#">品优购公益</a></li>
+                    <li><a href="#">English Site</a></li>
+                    <li><a href="#">Contact U</a></li>
+                </ul>
+            </nav>
+            <p class="footer__bottom-contact">
+                地址：北京市昌平区建材城西路金燕龙办公楼一层 邮编：100096 电话：400-618-4000 传真：010-82935100 邮箱: zhanghj+itcast.cn
+            </p>
+            <a href="#" class="footer__bottom-beian">
+                京ICP备08001421号京公网安备110108007702
+            </a>
+        </section>
+    </div>
+</footer>
+
+</body>
+</html>
