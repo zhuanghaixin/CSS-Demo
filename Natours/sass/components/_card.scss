@@ -1,0 +1,145 @@
+.card{
+  //persepective;:1500px 具有透视效果
+  perspective:150rem;
+  -moz-perspective:150rem;
+  height: 50rem;
+  position: relative;
+
+  &__side{
+    transition:all 1s ease;
+    height: 50rem;
+    width: 100%;
+    position: absolute;
+    top:0;
+    left:0;
+    backface-visibility: hidden;
+    border-radius:3px;
+    box-shadow:0 1em 2.5em rgba($color-black,.15);
+    //圆角 加图片会消失  使用overflow:hidden解决
+    overflow:hidden;
+    &--front{
+      background-color: $color-white;
+      color:#000;
+    }
+
+    &--back{
+      transform: rotateY(180deg);
+      background-color: orange;
+      color:#000;
+
+    //  第一个卡片背面
+      &-1{
+        background-image: linear-gradient(to right bottom,$color-secondary-light,$color-secondary-dark)
+      }
+
+    //  第二个卡片背面颜色
+      &-2{
+        background-image: linear-gradient(to right bottom,$color-primary-light, $color-primary-dark)
+
+      }
+
+      //  第二个卡片背面颜色
+      &-3{
+        background-image: linear-gradient(to right bottom, $color-tertiary-light, $color-tertiary-dark)
+      }
+    }
+  }
+
+  &:hover &__side--front{
+    transform:rotateY(-180deg);
+  }
+  &:hover &__side--back{
+    transform:rotateY(0);
+  }
+  //  图片设置
+  &__picture{
+    background-size:cover;
+    height: 23rem;
+    background-blend-mode: screen;
+    -webkit-clip-path: polygon(0 0, 100% 0,100% 85%,0 100% );
+    clip-path: polygon(0 0, 100% 0,100% 85%,0 100% );
+    &--1{
+      background-image:linear-gradient(to right bottom,$color-secondary-light,$color-secondary-dark),url(../img/nat-5.jpg);
+    }
+    &--2{
+      background-image:linear-gradient(to right bottom,$color-primary-light, $color-primary-dark),url(../img/nat-6.jpg);
+    }
+    &--3{
+      background-image:linear-gradient(to right bottom, $color-tertiary-light, $color-tertiary-dark),url(../img/nat-7.jpg);
+    }
+
+  }
+  // 标题设置
+  &__heading {
+    font-size: 2.8rem;
+    text-transform: uppercase;
+    font-weight: 300;
+    color: $color-white;
+    position: absolute;
+    top:12rem;
+    right:2rem;
+    text-align: right;
+  //  让文字换行，将heaing变窄
+    width:75%;
+  }
+  // 标题中的小文字
+  &__heading-span{
+    padding:1rem 1.5rem;
+    //使得文字换行的时候，切割的部分 padding生效
+    -webkit-box-decoration-break: clone;
+   box-decoration-break: clone;
+    &--1{
+      background-image: linear-gradient(to right bottom,rgba($color-secondary-light,.85),rgba($color-secondary-dark,.85));
+
+    }
+    &--2{
+      background-image: linear-gradient(to right bottom,rgba($color-primary-light,.85), rgba($color-primary-dark,.85));
+
+    }
+    &--3{
+      background-image: linear-gradient(to right bottom,rgba( $color-tertiary-light,.85),rgba( $color-tertiary-dark,.85))
+    }
+
+  }
+  &__details{
+    ul{
+      list-style: none;
+      width: 80%;
+      margin: 0 auto;
+      li{
+        text-align: center;
+        font-size:1.5rem;
+        padding:1rem;
+        border-bottom: 1px solid $color-grey-light-2;
+        color: $color-grey-dark-2;
+      }
+    }
+  }
+
+////  反面 cta
+  &__cta{
+    position: absolute;
+    top:50%;
+    left:50%;
+    width: 100%;
+    text-align: center;
+    transform:translate(-50%,-50%);
+  }
+  &__price-box{
+    text-align: center;
+    margin-bottom: 8rem;
+    color:$color-white
+  }
+  &__price-only{
+    font-size:1.4rem;
+    text-transform:uppercase;
+  }
+  &__price-value{
+    font-size:6rem;
+    font-weight:300;  //字体不生效的原因是因为 字体不一样哈
+  }
+}
+
+
+
+
