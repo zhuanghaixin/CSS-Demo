@@ -2,6 +2,7 @@
 @import "abstracts/mixins";
 @import "abstracts/functions";
 
+
 @import "base/base";
 @import "base/animations";
 @import "base/typography";
@@ -14,6 +15,7 @@
 @import "components/bg-video";
 @import "components/story";
 @import "components/form";
+@import "components/popup";
 
 @import "layout/header";
 @import "layout/grid";
