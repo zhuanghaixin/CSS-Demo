@@ -138,6 +138,53 @@
     font-size:6rem;
     font-weight:300;  //字体不生效的原因是因为 字体不一样哈
   }
+
+
+  //媒体查询
+  @include respond(tab-port){
+    height: auto;
+    border-radius:3px;
+    background-color:$color-white;
+    box-shadow:0 1em 2.5em rgba($color-black,.15);
+
+    &__side{
+      height: auto;
+      box-shadow:none;
+      position: relative;
+      &--back{
+        transform: rotateY(0deg);
+        clip-path:polygon(0 15%,100% 0,100% 100%,0 100%);
+      }
+    }
+
+    &:hover &__side--front{
+      transform:rotateY(-180deg);
+    }
+    &:hover &__side--back{
+      transform:rotateY(0);
+    }
+    &__details{
+      padding: 0 3rem;
+    }
+
+    ////  反面 cta
+    &__cta{
+      position: relative;
+      top:0;
+      left:0;
+      width: 100%;
+      text-align: center;
+      transform:translate(0);
+      padding:7rem 4rem 4rem;
+    }
+    &__price-box{
+      margin-bottom: 3rem;
+    }
+    &__price-value{
+      font-size:4rem;
+    }
+
+  }
 }
 
 

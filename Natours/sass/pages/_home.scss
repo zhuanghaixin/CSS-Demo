@@ -1,12 +1,18 @@
 .section-about{
   background-color: $color-grey-light-1;
-  padding: 15.625em 0;
+  padding: 25rem 0;
   margin-top: -20vh;
   //clip-path: polygon(0 20vh, 100% 0, 100% calc(100% - 20vh), 0 100%);
+
+  //媒体查询
+  @include respond(tab-port){
+    padding: 20rem 0;
+
+  }
 }
 
 .section-features{
-  padding:12.5em 0;
+  padding:20rem 0;
   margin-top: -10rem;
 
   background-image: linear-gradient(
@@ -15,31 +21,51 @@
                   rgba($color-primary-dark, 0.8)),
   url(../img/nat-4.jpg);
   background-size: cover;
-  background-size: cover;
 
   //clip-path: polygon(0 20vh, 100% 0, 100% calc(100% - 20vh), 0 100%);
   transform:skewY(-7deg);
+
   &>*{
     transform:skewY(7deg);
+  }
+  //媒体查询
+  @include respond(tab-port){
+    padding: 10rem 0;
+
   }
 }
 
 .section-tours{
   background-color: $color-grey-light-1;
-  padding:15.626em 0 9.375em 0 ;
-  margin-top: -10em;
+  padding: 25rem 0 15rem 0;
+  margin-top: -10rem;
+  //媒体查询
+  @include respond(tab-port){
+    padding: 20rem 0 10rem 0;
+
+  }
 }
 
 .section-stories{
   position: relative;
   padding: 15rem 0;
   //background: $color-grey-light-1;
+  //媒体查询
+  @include respond(tab-port){
+    padding: 10rem 0;
+
+  }
 
 }
 
 .section-book{
   padding:15rem 0;
   background-image: linear-gradient(to right bottom,$color-primary-light, $color-primary-dark);
+  //媒体查询
+  @include respond(tab-port){
+    padding: 10rem 0;
+
+  }
 }
 
 .book{
@@ -48,15 +74,42 @@
                   rgba($color-white,.9) 50%,
                   transparent 50%),
   url(../img/nat-10.jpg);
+  //background-repeat: no-repeat;
   background-size: 100%;
   border-radius: 3px;
   box-shadow: 0 1.5rem 4rem rgba($color-black, .2);
-  height: 50rem;
-}
-.book-form{
+  //height: 50rem;
+//媒体查询
+  @include respond(tab-land ){
+    background-image: linear-gradient(105deg,
+            rgba($color-white,.9) 0%,
+            rgba($color-white,.9) 65%,
+            transparent 65%),
+    url(../img/nat-10.jpg);
+    background-size:cover;
 
-  width: 50%;
-  padding: 6rem;
+  }
+  @include respond(tab-port ){
+    background-image: linear-gradient(to right,
+            rgba($color-white,.9) 0%,
+            rgba($color-white,.9) 100%),
+    url(../img/nat-10.jpg);
+    background-size:cover;
 
+  }
+  &__form{
+
+    width: 50%;
+    padding: 6rem;
+    //媒体查询
+    @include respond(tab-land ){
+      width: 65%;
+    }
+
+    @include respond(tab-port ){
+      width: 100%;
+    }
+
+  }
 
 }

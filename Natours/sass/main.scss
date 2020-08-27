@@ -4,9 +4,17 @@
 
 
 @import "base/base";
-@import "base/animations";
 @import "base/typography";
+@import "base/animations";
 @import "base/utilites";
+
+@import "layout/header";
+@import "layout/footer";
+@import "layout/navigation";
+@import "layout/grid";
+
+@import "pages/home";
+
 
 @import "components/button";
 @import "components/composition";
@@ -17,12 +25,7 @@
 @import "components/form";
 @import "components/popup";
 
-@import "layout/header";
-@import "layout/grid";
-@import "layout/footer";
-@import "layout/navigation";
 
-@import "pages/home";
 
 
 

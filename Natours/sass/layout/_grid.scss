@@ -9,6 +9,15 @@
   //}
   &:not(:last-child){
     margin-bottom:$gutter-vertical;
+    //媒体查询
+    @include respond(tab-port){
+      margin-bottom: $gutter-vertical-small;
+    }
+  }
+  //媒体查询
+  @include respond(tab-port){
+    max-width:50rem;
+    padding:0 3rem;
   }
   // 清除浮动
   @include clearfix;
@@ -18,6 +27,15 @@
     //background-color: #f00;
     &:not(:last-child){
       margin-right: $gutter-horizontal;
+      //媒体查询
+      @include respond(tab-port){
+        margin-right: 0;
+        margin-bottom: $gutter-vertical-small;
+      }
+    }
+    //媒体查询
+    @include respond(tab-port){
+      width: 100% !important;
     }
   }
   .col-1-of-2{

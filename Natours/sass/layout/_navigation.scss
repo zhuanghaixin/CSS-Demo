@@ -17,6 +17,17 @@
     text-align: center;
     cursor: pointer;
 
+  //  媒体查询
+    @include respond(tab-port){
+      top:4rem;
+      right: 4rem;
+    }
+    @include respond(tab-port){
+      top:3rem;
+      right: 3rem;
+
+    }
+
   }
 
   &__background {
@@ -31,6 +42,19 @@
     //transform:scale(80);
     //  点击按钮，背景过渡
     transition: transform 0.6s cubic-bezier(0.83, 0, 0.17, 1);
+
+    //  媒体查询
+    @include respond(tab-port){
+      top:4.5rem;
+      right: 4.5rem;
+
+    }
+    @include respond(tab-port){
+      top:3.5rem;
+      right: 3.5rem;
+
+    }
+
   }
 
   &__nav {

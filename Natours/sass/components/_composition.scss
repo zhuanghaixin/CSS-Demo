@@ -7,23 +7,49 @@
     z-index:10;
     transition: all .3s;
     outline-offset:2rem;
+
+    //媒体查询
+    @include respond(tab-port){
+      position: relative;
+      float:left;
+      width: 33.33333333%;
+
+    }
     &--p1{
       left:0;
       top:-2rem;
+      //媒体查询
+      @include respond(tab-port){
+        top:0;
+
+      }
 
     }
     &--p2{
       right:0;
       top:2rem;
+      ////媒体查询
+      @include respond(tab-port){
+       top:-1rem;
+        transform:scale(1.3);
+        z-index:100;
+      }
 
     }
     &--p3{
       left:22.5%;
       top:10rem;
+      left:10rem;
+      //媒体查询
+      @include respond(tab-port){
+        top:1rem;
+        left:0;
+        transform:scale(1.1);
+      }
     }
     &:hover{
-      z-index:20;
-      transform:scale(1.1) translateY(-1px);
+      z-index:200;
+      transform:scale(1.3) translateY(-1px);
       outline:1.5rem solid $color-primary;
     }
   }

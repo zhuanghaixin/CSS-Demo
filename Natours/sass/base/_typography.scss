@@ -1,10 +1,10 @@
 body {
   font-family: "Lato", Arial, Helvetica, sans-serif;
   font-weight: 400;
-  font-size: 1.6rem;
+  //font-size: 1.6rem;
   line-height: 1.7;
   color: $color-grey-dark;
-  padding: 1.875em;
+
 }
 
 
@@ -12,16 +12,22 @@ body {
   color: $color-white;
   text-transform: uppercase;
   backface-visibility: hidden;
-  margin-bottom: 60px;
+  margin-bottom: 6rem;
+  //媒体查询
+
 
   &--main {
     display: block;
     font-size: 6rem;
-    letter-spacing: 35px;
+    letter-spacing: 3.5rem;
     font-weight: 400;
     animation-name: moveInLeft;
     animation-duration: 1s;
     animation-timing-function: ease-out;
+    @include respond(phone){
+      letter-spacing: 1rem;
+      font-size:5rem;
+    }
   }
 
   &--sub {
@@ -43,6 +49,14 @@ body {
   background-clip: text;
   color: transparent;
   transition: all .2s;
+
+  //媒体查询
+  @include respond(tab-port){
+    font-size:2.5rem;
+  }
+  @include respond(phone){
+    font-size:2rem;
+  }
   &:hover{
     transform:skewX(20deg) skewY(2deg) scale(1.1) ;
     text-shadow:.5rem 1rem 2rem rgba($color-black,.2)

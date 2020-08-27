@@ -15,6 +15,12 @@
     border-bottom:3px solid transparent;
     transition: all .5s;
 
+    //媒体查询
+    @include respond(tab-port){
+      width: 90%;
+
+
+    }
 
 
     &:focus{
@@ -49,6 +55,13 @@
   &__radio-group{
     width: 49%;
     display: inline-block;
+
+    //媒体查询
+    @include respond(tab-port){
+      width: 100%;
+      margin-bottom: 2rem;
+
+    }
   }
 
   &__radio-input {
