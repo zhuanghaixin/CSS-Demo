@@ -4,11 +4,20 @@
   position: fixed;
   top: 0;
   left: 0;
-  background: rgba($color-black, .8);
+  background: rgba($color-black, .2);
   z-index: 3000;
   opacity: 0;
   visibility: hidden;
   transition:all.3s;
+  backdrop-filter:blur(10px);
+  //浏览器支持
+  @supports(-webkit-backdrop-filter: blur(10px)) or (backdrop-filter:blur(10px)){
+  -webkit-backdrop-filter: blur(10px);
+    backdrop-filter:blur(10px);
+  background: rgba($color-black, .2);
+  }
+
+  //backdrop-filter CSS 属性可以让你为一个元素后面区域添加图形效果（如模糊或颜色偏移）。 因为它适用于元素背后的所有元素，为了看到效果，必须使元素或其背景至少部分透明。
 
 
 
@@ -21,7 +30,7 @@
     display: table;
     overflow: hidden;
     opacity:0;
-    transform:translate(-50%,-50%) scale(0.25);
+    transform:translate(-50%,-50%) scale(0.5);
     transition: all .5s .2s;
   }
   &__left{
