@@ -1,16 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        
-        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600" rel="stylesheet">
-        <link rel="stylesheet" href="css/style.css">
-        <link rel="shortcut icon" type="image/png" href="img/favicon.png">
-        
-        <title>trillo &mdash; Your all-in-one booking app</title>
-    </head>
-    <body>
-        
-    </body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!--    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600" rel="stylesheet">-->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" type="image/png" href="img/favicon.png">
+
+    <title>trillo &mdash; Your all-in-one booking app</title>
+</head>
+<body>
+<div class="container">
+    <div class="header">
+        <img src="img/logo.png" alt="trillo logo" class="logo">
+        <form action="#" class="search">
+            <input type="text" class="search__input" placeholder="Search hotels">
+            <button class="search__button">
+                <svg class="search__icon">
+                    <use xlink:href="img/sprite.svg#icon-magnifying-glass"></use>
+                </svg>
+
+            </button>
+        </form>
+        <nav class="user-nav">
+            <div class="user-nav__icon-box">
+                <svg class="user-nav__icon">
+                    <use xlink:href="img/sprite.svg#icon-bookmark"></use>
+                </svg>
+                <span class="user-nav__notifications">7</span>
+            </div>
+            <div class="user-nav__icon-box">
+
+
+                <svg class="user-nav__icon">
+                    <use xlink:href="img/sprite.svg#icon-chat"></use>
+                </svg>
+
+                <span class="user-nav__notifications">13</span>
+            </div>
+            <div class="user-nav__user">
+                <img src="img/user.png" alt="User Photo" class="user-nav__user-photo">
+                <span class="user-nav__user-name">Hisen</span>
+            </div>
+        </nav>
+    </div>
+    <div class="content">
+        <nav class="sidebar">
+<!--            <svg class="user-nav__icon">-->
+<!--                <use xlink:href="img/sprite.svg#icon-home"></use>-->
+<!--            </svg>-->
+<!--            <svg class="user-nav__icon">-->
+<!--                <use xlink:href="img/sprite.svg#icon-aircraft-take-off"></use>-->
+<!--            </svg>-->
+<!--            <svg class="user-nav__icon">-->
+<!--                <use xlink:href="img/sprite.svg#icon-key"></use>-->
+<!--            </svg>-->
+<!--            <svg class="user-nav__icon">-->
+<!--                <use xlink:href="img/sprite.svg#icon-map"></use>-->
+<!--            </svg>-->
+        </nav>
+        <main class="hotel-view">
+            Hotel-View
+        </main>
+    </div>
+</div>
+</body>
 </html>

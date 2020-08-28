@@ -1,0 +1,121 @@
+///////////////////
+//LOGO
+.logo{
+  height: 3.25rem;
+  margin-left: 3rem;
+
+}
+///////////////////
+//SEARCH
+.search{
+  //background: #f00;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+
+  flex:0 0 40%;
+  &__input{
+    font-family:inherit;  //input font-family没有继承 所以我们要重新设置
+    font-size: inherit;
+    color:inherit;
+    background-color:var(--color-grey-light-2);
+    border:none;
+    padding:.7rem 2rem;
+    border-radius:2em;
+    width: 90%;
+    transition:all .2s;
+    margin-right: -3.25rem;  //使得搜索🔍图标向左偏移
+    &:focus{
+      outline: none;
+      width:100%;
+      background-color:var(--color-grey-light-3);
+    }
+    &::placeholder{
+      font-weight: 100;
+      color:var(--color-grey-light-4);
+    }
+
+  }
+  &__input:focus+&__button{
+    background-color:var(--color-grey-light-3);
+  }
+  &__button{
+    border:none;
+    background-color:var(--color-grey-light-2);
+    &:focus{
+      outline:none;
+    }
+    &:active{
+      transform:translateY(-2px); //按钮按下的效果
+    }
+
+
+
+  }
+  &__icon{
+    height: 2rem;
+    width: 2rem;
+    //svg 颜色填充
+    fill:var(--color-grey-dark-3);
+  }
+}
+
+
+
+
+////////////////////
+//USER NAVIGATION
+.user-nav{
+  display: flex;
+  align-self: stretch;
+  & >*{
+    padding:0 2rem;
+    cursor:pointer;
+    height: 100%;
+    display: flex;
+
+    align-items: center;
+
+  }
+  &>*:hover{
+    background-color:var(--color-grey-light-2);
+  }
+  &__icon-box{
+    position: relative;
+  }
+  &__icon{
+    height: 2.5rem;
+    width: 2.5rem;
+    fill:var(--color-grey-dark-2);
+
+  }
+  &__notifications{
+    font-size: .8rem;
+    height: 1.75rem;
+    width: 1.75rem;
+    border-radius: 50%;
+    background-color: var(--color-primary);
+    color: #fff;
+    position: absolute;
+    top: 1.5rem;
+    right: 1.1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  }
+  &__user{
+
+  }
+  &__user-photo{
+    height: 3.75rem;
+    border-radius:50%;
+    vertical-align: middle;
+    margin-right: 1rem;
+  }
+  &__user-name{
+
+  }
+}
+
