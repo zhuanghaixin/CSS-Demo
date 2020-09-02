@@ -38,8 +38,4 @@ body{
   grid-template-rows:80vh min-content 40vw repeat(3,min-content) ;
 
 
-  &>*{
-    padding: 40px;
-    font-size:3rem
-  }
 }

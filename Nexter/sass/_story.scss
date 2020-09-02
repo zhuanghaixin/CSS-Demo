@@ -3,7 +3,39 @@
 
     background-color: $color-primary;
     grid-column:full-start/col-end 4;
+    display: grid;
+    grid-template-columns:repeat(6,1fr);
+    grid-template-rows:repeat(6,1fr);
+    align-items:center;
+    background-image: url(../img/back.jpg);
+    border-radius: 5px;
+    font-family: sans-serif;
+    text-align: center;
+    line-height: 1;
+    position: relative;
+
+
   }
+
+  &__img--1{
+    width: 100%;
+    grid-row:2/6;
+    grid-column:2/6;
+    box-shadow:0 2rem 5rem rgba(#000,.1);
+
+
+
+  }
+  &__img--2{
+    width: 115%;
+    grid-row:4/6;
+    grid-column:4/7;
+    position: relative;
+    z-index:20;
+    box-shadow:0 2rem 5rem rgba(#000,.2);
+
+  }
+
   &__content{
     background-color: $color-grey-light-1;
     grid-column:col-start 5/ full-end;
