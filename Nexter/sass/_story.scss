@@ -7,6 +7,26 @@
   &__content{
     background-color: $color-grey-light-1;
     grid-column:col-start 5/ full-end;
+    //padding: 6rem 12rem;
+    padding: 6rem 8vw;
+
+
+    //使用flex布局垂直居中
+    //display: flex;
+    //flex-direction: column;
+    //justify-content: center;
+    //align-items: start;
+
+    //使用grid布局居中
+    display: grid;
+    align-content: center;
+   justify-items:start;
+
   }
 
+  &__text{
+    font-size:1.5rem;
+    font-style: italic;
+    margin-bottom: 4rem;
+  }
 }
