@@ -91,6 +91,9 @@ body {
         &:not(:first-child){
           display: none;
         }
+        &:first-child {
+          font-size: 4rem;
+        }
 
       }
 
@@ -202,6 +205,7 @@ body {
   }
   @media screen and (max-width: @mobile) {
     width: calc(100% - 70px);
+    margin: 17.5px 35px;
 
   }
 
@@ -217,7 +221,6 @@ body {
   &__content {
     text-align: center;
     padding: 0 .9rem;
-    height: 20.7rem;
     padding-top: 0.1px;
 
     .heading--tertiary {
@@ -232,6 +235,9 @@ body {
     p:nth-of-type(1) {
       color: @color-gray;
       margin-bottom: 1rem;
+    }
+    p:last-child{
+      margin-bottom: 3rem;
     }
   }
 }
