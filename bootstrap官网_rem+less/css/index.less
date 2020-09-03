@@ -17,38 +17,24 @@ html {
   }
 }
 
-body {
-  min-width: 1200px;
-  @media screen and (max-width: @laptop) {
-    min-width: 992px;
 
-  }
-  @media screen and (max-width: @tablet) {
-    min-width: 768px;
-
-  }
-  @media screen and (max-width: @mobile) {
-    min-width: 375px;
-
-  }
-
-}
 
 .container {
   width: 1170px;
   margin: 0 auto;
-  @media screen and (max-width: @laptop) {
+  @media screen and (max-width: @desktop) {
     width: 970px;
 
   }
-  @media screen and (max-width: @tablet) {
+  @media screen and (max-width: @laptop) {
     width: 750px;
 
   }
-  @media screen and (max-width: @mobile) {
-    width: 375px;
+  @media screen and (max-width: @tablet) {
+    width: 100%;
 
   }
+
 
 }
 
@@ -85,9 +71,6 @@ body {
        &:last-child{
          display: none;
        }
-
-      }
-      @media screen and (max-width: @mobile) {
         &:not(:first-child){
           display: none;
         }
@@ -116,7 +99,7 @@ body {
     margin: 0 1.5rem;
     color: inherit;
 
-    @media screen and (max-width: @mobile) {
+    @media screen and (max-width: @tablet) {
       display: none;
     }
 
@@ -132,7 +115,7 @@ body {
     img{
       width: 100%;
     }
-    @media screen and (max-width: @mobile) {
+    @media screen and (max-width: @tablet) {
       display: block;
     }
 
