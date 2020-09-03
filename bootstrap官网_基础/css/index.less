@@ -1,0 +1,267 @@
+@import "base";
+@import "variable";
+
+
+body {
+  min-width: 1200px;
+  @media screen and (max-width: @laptop) {
+    min-width: 992px;
+
+  }
+  @media screen and (max-width: @tablet) {
+    min-width: 768px;
+
+  }
+  @media screen and (max-width: @mobile) {
+    min-width: 375px;
+
+  }
+
+}
+
+.container {
+  width: 1170px;
+  margin: 0 auto;
+  @media screen and (max-width: @laptop) {
+    width: 970px;
+
+  }
+  @media screen and (max-width: @tablet) {
+    width: 750px;
+
+  }
+  @media screen and (max-width: @mobile) {
+    width: 375px;
+
+  }
+
+}
+
+.header {
+  height: 42px;
+  background-color: @color-black;
+  color: @color-gray;
+  position: fixed;
+  top:0;
+  left:0;
+  width: 100%;
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__nav {
+    display: flex;
+    align-items: center;
+    height: 42px;
+    //todo
+
+    li {
+      margin: 0 15px;
+      @media screen and (max-width: @laptop) {
+       &:nth-child(2){
+         display: none;
+       }
+
+      }
+      @media screen and (max-width: @tablet) {
+       &:last-child{
+         display: none;
+       }
+
+      }
+      @media screen and (max-width: @mobile) {
+        &:not(:first-child){
+          display: none;
+        }
+        &:first-child {
+          font-size: 20px;
+        }
+
+      }
+
+      a {
+        color: inherit;
+
+        &:hover {
+          color: @color-white;
+        }
+      }
+    }
+  }
+  &__btn-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__about {
+    margin: 0 15px;
+    color: inherit;
+
+    @media screen and (max-width: @mobile) {
+      display: none;
+    }
+
+
+
+    &:hover {
+      color: @color-white;
+    }
+  }
+  &__menu{
+    display: none;
+
+    img{
+      width: 100%;
+    }
+    @media screen and (max-width: @mobile) {
+      display: block;
+    }
+
+  }
+
+}
+
+.main{
+  margin-top: 42px;
+}
+
+.banner {
+  background: url(../imgs/bs.png) center repeat, linear-gradient(45deg, @color-primary-dark, @color-primary-light);
+  height: 470px;
+  background-blend-mode: soft-light;
+  @media screen and (max-width: @laptop) {
+    height: 420px;
+
+  }
+  @media screen and (max-width: @tablet) {
+    height: 376px;
+
+  }
+  @media screen and (max-width: @mobile) {
+    height: 235px;
+
+  }
+
+  .container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    a {
+      color: @color-gray;
+      font-size: 14px;
+    }
+  }
+}
+
+.projects {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 60px;
+  @media screen and (max-width: @laptop) {
+    padding-top:54px
+
+  }
+  @media screen and (max-width: @tablet) {
+    padding-top:48px
+
+  }
+  @media screen and (max-width: @mobile) {
+    padding-top: 33px;
+
+  }
+
+  > .paragraph--secondary {
+    padding-bottom: 20px;
+    border-bottom: @border-light;
+    width: 60%;
+    text-align: center;
+    @media screen and (max-width: @laptop) {
+      padding-bottom:18px;
+
+    }
+    @media screen and (max-width: @tablet) {
+      padding-bottom:16px;
+
+    }
+    @media screen and (max-width: @mobile) {
+      padding-bottom:12px;
+
+    }
+  }
+
+
+  &__img {
+
+  }
+
+  &__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+.project {
+  width: calc(25% - 30px);
+  margin: 15px;
+  border: @border-dark;
+  padding: 4px;
+  background-color: @color-white;
+  @media screen and (max-width: @laptop) {
+    width: calc(33.33% - 30px);
+
+  }
+  @media screen and (max-width: @tablet) {
+    width: calc(50% - 70px);
+    margin: 35px;
+
+  }
+  @media screen and (max-width: @mobile) {
+    width: calc(100% - 70px);
+    margin: 17.5px 35px;
+
+  }
+
+  &__img {
+    width: 100%;
+    display: block;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  &__content {
+    text-align: center;
+    padding: 0 9px;
+    padding-top: 0.1px;
+
+    .heading--tertiary {
+      margin-top: 30px;
+      margin-bottom: 10px;
+
+      a {
+        color: inherit;
+      }
+    }
+
+    p:nth-of-type(1) {
+      color: @color-gray;
+      margin-bottom: 10px;
+    }
+    p:last-child{
+      margin-bottom: 30px;
+    }
+  }
+}
+
+
+

@@ -1,0 +1,208 @@
+
+//颜色
+@color-primary-dark:#020031;
+@color-primary-light:#6d3353;
+@color-black:#222222;
+@color-gray:#9d9d9d;
+@color-gray-dark:#777;
+@color-white:#fff;
+@color-blue:#337ab7;
+
+
+//typography
+
+//border
+@border-light:1px solid #eee;
+@border-dark:1px solid #ddd;
+
+
+//heading
+.heading--primary{
+  color:@color-white;
+  font-size:100px;
+  line-height: 1;
+  @media screen and (max-width: @laptop) {
+    font-size:90px
+
+  }
+  @media screen and (max-width: @tablet) {
+    font-size:60px;
+
+  }
+  @media screen and (max-width: @mobile) {
+   font-size:40px;
+
+  }
+
+}
+.heading--secondary{
+  font-size:42px;
+  line-height: 1;
+  font-weight:400;
+  @media screen and (max-width: @laptop) {
+    font-size:34px
+
+  }
+  @media screen and (max-width: @tablet) {
+    font-size:28px;
+
+  }
+  @media screen and (max-width: @mobile) {
+    font-size:20px;
+
+  }
+}
+.heading--tertiary{
+  font-size:25px;
+  line-height: 1;
+  color:@color-blue;
+}
+
+
+//paragraph
+.paragraph--primary{
+  color: @color-white;
+  font-size:30px;
+  line-height: 1;
+  @media screen and (max-width: @laptop) {
+    font-size:24px
+
+  }
+  @media screen and (max-width: @tablet) {
+    font-size:14px;
+
+  }
+  @media screen and (max-width: @mobile) {
+    font-size:12px;
+
+  }
+}
+.paragraph--secondary{
+  color:@color-gray;
+  font-size:14px;
+  line-height: 1;
+}
+.paragraph--tertiary{
+  color:@color-gray-dark;
+  font-size:14px;
+  line-height: 1;
+}
+
+//btn
+.btn{
+    outline:none;
+  border:none;
+  background-color: @color-blue;
+  font-size:20px;
+  color:@color-white;
+  padding: 15px 35px;
+  cursor:pointer;
+  @media screen and (max-width: @laptop) {
+    font-size:18px;
+    padding: 12px 30px;
+
+  }
+  @media screen and (max-width: @tablet) {
+    font-size:16px;
+    padding: 10px 25px;
+
+  }
+  @media screen and (max-width: @mobile) {
+    font-size:14px;
+    padding: 8px 20px;
+
+  }
+}
+
+//margin
+.u-margin-bottom-huge{
+  margin-bottom:60px;
+  @media screen and (max-width: @laptop) {
+    margin-bottom:54px;
+
+  }
+  @media screen and (max-width: @tablet) {
+    margin-bottom:48px;
+
+  }
+  @media screen and (max-width: @mobile) {
+    margin-bottom: 36px;
+
+  }
+
+}
+.u-margin-bottom-big{
+  margin-bottom:40px;
+  @media screen and (max-width: @laptop) {
+    margin-bottom:36px;
+
+  }
+  @media screen and (max-width: @tablet) {
+    margin-bottom:32px;
+
+  }
+  @media screen and (max-width: @mobile) {
+    margin-bottom: 24px;
+
+  }
+
+
+}
+.u-margin-bottom-medium{
+  margin-bottom: 30px;
+  @media screen and (max-width: @laptop) {
+    margin-bottom:27px;
+
+  }
+  @media screen and (max-width: @tablet) {
+    margin-bottom:24px;
+
+  }
+  @media screen and (max-width: @mobile) {
+    margin-bottom: 18px;
+
+  }
+
+}
+.u-margin-bottom-small{
+  margin-bottom: 20px;
+  @media screen and (max-width: @laptop) {
+    margin-bottom:18px;
+
+  }
+  @media screen and (max-width: @tablet) {
+    margin-bottom:16px;
+
+  }
+  @media screen and (max-width: @mobile) {
+    margin-bottom: 12px;
+
+  }
+
+}
+
+.u-margin-bottom-smallest{
+  margin-bottom: 10px;
+  @media screen and (max-width: @laptop) {
+    margin-bottom:9px;
+
+  }
+  @media screen and (max-width: @tablet) {
+    margin-bottom:8px;
+
+  }
+  @media screen and (max-width: @mobile) {
+    margin-bottom: 7px;
+
+  }
+
+}
+
+//设备
+//media query
+@mobile:375px;
+@tablet:768px;
+@laptop:992px;
+@desktop:1200px;
+
+
