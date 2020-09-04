@@ -1,0 +1,293 @@
+@import "base";
+@import "common";
+
+
+.container {
+  width: 1170px;
+  margin: 0 auto;
+
+  @media screen and (max-width: @desktop) {
+    width: 970px;
+
+  }
+  @media screen and (max-width: @laptop) {
+    width: 750px;
+
+  }
+  @media screen and (max-width: @tablet) {
+    width: 100%;
+
+  }
+
+}
+
+.header {
+  height: 42px;
+  background-color: @color-black;
+  color: @color-gray;
+  position: fixed;
+  top:0;
+  left:0;
+  width: 100%;
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__nav {
+    display: flex;
+    align-items: center;
+    height: 42px;
+    //todo
+
+    li {
+      margin: 0 15px;
+      @media screen and (max-width: @desktop) {
+        margin: 0 13px;
+
+      }
+      @media screen and (max-width: @laptop) {
+        margin: 0 11px;
+
+      }
+      @media screen and (max-width: @tablet) {
+        margin: 0 9px;
+
+      }
+      @media screen and (max-width: @laptop) {
+       &:nth-child(2){
+         display: none;
+       }
+
+      }
+      @media screen and (max-width: @tablet) {
+       &:last-child {
+         display: none;
+       }
+        &:not(:first-child){
+          display: none;
+        }
+        &:first-child {
+          font-size: 20px;
+        }
+
+      }
+
+      a {
+        color: inherit;
+
+        &:hover {
+          color: @color-white;
+        }
+      }
+    }
+  }
+  &__btn-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__about {
+    margin: 0 15px;
+    color: inherit;
+
+    @media screen and (max-width: @tablet) {
+      display: none;
+    }
+
+
+
+    &:hover {
+      color: @color-white;
+    }
+  }
+  &__menu{
+    display: none;
+
+    img{
+      width: 100%;
+    }
+    @media screen and (max-width: @tablet) {
+      display: block;
+    }
+
+  }
+
+}
+
+.main{
+  margin-top: 42px;
+}
+
+.banner {
+  background: url(../imgs/bs.png) center repeat, linear-gradient(45deg, @color-primary-dark, @color-primary-light);
+  height: 470px;
+  background-blend-mode: soft-light;
+  @media screen and (max-width: @desktop) {
+    .vw-desktop(470);
+    height: @vw-desktop;
+
+
+  }
+  @media screen and (max-width: @laptop) {
+    .vw-laptop(470);
+    height: @vw-laptop;
+
+  }
+  @media screen and (max-width: @tablet) {
+    .vw-tablet(470);
+    height: @vw-tablet;
+
+  }
+
+
+  .container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    a {
+      color: @color-gray;
+      font-size: 14px;
+    }
+  }
+}
+
+.projects {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 60px;
+
+  @media screen and (max-width: @desktop) {
+    .vw-desktop(60);
+    padding-top: @vw-desktop;
+
+
+  }
+  @media screen and (max-width: @laptop) {
+    .vw-laptop(60);
+    padding-top: @vw-laptop;
+
+  }
+  @media screen and (max-width: @tablet) {
+    .vw-tablet(60);
+    padding-top: @vw-tablet;
+
+  }
+
+  > .paragraph--secondary {
+    padding-bottom: 20px;
+    border-bottom: @border-light;
+    width: 60%;
+    text-align: center;
+
+    @media screen and (max-width: @desktop) {
+      .vw-desktop(20);
+      padding-bottom: @vw-desktop;
+
+
+    }
+    @media screen and (max-width: @laptop) {
+      .vw-laptop(20);
+      padding-bottom: @vw-laptop;
+
+    }
+    @media screen and (max-width: @tablet) {
+      .vw-tablet(20);
+      padding-bottom: @vw-tablet;
+
+    }
+  }
+
+
+  &__img {
+
+  }
+
+  &__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+.project {
+  width: calc(25% - 30px);
+  margin: 15px;
+  border: @border-dark;
+  padding: 4px;
+  background-color: @color-white;
+
+  @media screen and (max-width: @desktop) {
+    width: calc(33.33% - 30px);
+
+  }
+  @media screen and (max-width: @laptop) {
+    width: calc(50% - 70px);
+    margin: 35px;
+
+  }
+  @media screen and (max-width: @tablet) {
+    width: calc(100% - 70px);
+    margin: 17.5px 35px;
+
+  }
+
+  &__img {
+    width: 100%;
+    display: block;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  &__content {
+    text-align: center;
+    padding: 0 9px;
+    padding-top: 0.1px;
+
+    .heading--tertiary {
+      margin-top: 30px;
+      margin-bottom: 10px;
+
+
+      a {
+        color: inherit;
+      }
+    }
+
+    p:nth-of-type(1) {
+      color: @color-gray;
+      margin-bottom: 10px;
+      @media screen and (max-width: @desktop) {
+        .vw-desktop(10);
+        margin-bottom: @vw-desktop;
+
+
+      }
+      @media screen and (max-width: @laptop) {
+        .vw-laptop(10);
+        margin-bottom: @vw-laptop;
+
+      }
+      @media screen and (max-width: @tablet) {
+        .vw-tablet(10);
+        margin-bottom: @vw-tablet;
+
+      }
+    }
+    p:last-child{
+      margin-bottom: 30px;
+    }
+  }
+}
+
+
+
