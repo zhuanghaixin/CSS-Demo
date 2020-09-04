@@ -417,18 +417,18 @@ input {
   padding: 4px;
   background-color: #fff;
 }
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 1120px) {
   .project {
     width: calc(33.33% - 30px);
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 992px) {
   .project {
     width: calc(50% - 70px);
     margin: 35px;
   }
 }
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 768px) {
   .project {
     width: calc(100% - 70px);
     margin: 17.5px 35px;
