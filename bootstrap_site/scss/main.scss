@@ -1,0 +1,116 @@
+@import "_base.scss";
+@import "_variable.scss";
+@import "../node_modules/rfs/scss";
+
+.navbar {
+  &-brand {
+    .bi {
+      color: $color-primary;
+    }
+  }
+}
+
+.main {
+  margin-top: 56px;
+
+  .banner {
+    background: url(../imgs/bs.png) center repeat, linear-gradient(45deg, $color-primary-dark, $color-primary-light);
+    height: 470px;
+    background-blend-mode: soft-light;
+
+    .container {
+      height: 100%;
+
+      h1 {
+        @include font-size(6.25rem);
+        // or
+        //@include responsive-font-size(64px);
+        // or
+        //@include rfs(64);
+      }
+
+      p {
+        @include font-size(1.875rem);
+      }
+
+      button {
+        @include font-size(1.125rem);
+      }
+
+      a {
+        @include font-size(0.875rem);
+      }
+
+
+    }
+  }
+
+  >.container {
+
+    .projects {
+      padding-top: 60px;
+
+      h2 {
+
+        @include font-size(2.625rem);
+      }
+
+      > p {
+        @include font-size(0.875rem);
+        color: $color-gray;
+        border-bottom: $border-light;
+        width: 60%;
+        text-align: center;
+      }
+
+      &__wrapper {
+
+      }
+
+      .project {
+        // width: 23%;
+        height: 90%;
+        margin: 0 10px 30px;
+        padding: 4px;
+        border: 1px solid #ddd;
+        text-align: center;
+        color: #777777;
+        &__img {
+          width: 100%;
+          display: block;
+
+          img {
+            width: 100%;
+          }
+        }
+
+
+        h3 {
+          font-size: 24px;
+          font-weight: 500;
+          margin: 20px 10px;
+
+          a {
+            color: #337ab7;
+          }
+
+          p:nth-of-type(1) {
+            font-size: 15px;
+          }
+        }
+
+        p {
+          font-size: 14px;
+          margin-bottom: 30px;
+        }
+      }
+
+
+
+
+    }
+  }
+}
+
+
+

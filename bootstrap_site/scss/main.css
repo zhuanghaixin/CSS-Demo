@@ -1,0 +1,51 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-size: 12px;
+  font-family: Neue, Helvetica, Arial, Hiragino Sans GB, Hiragino Sans GB W3, WenQuanYi Micro Hei, sans-serif;
+}
+a {
+  text-decoration: none;
+  -webkit-tap-highlight-color: transparent;
+}
+li {
+  list-style: none;
+}
+img {
+  vertical-align: middle;
+}
+input {
+  border: 0 none;
+  outline-style: none;
+}
+.clearfix::after {
+  content: '';
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+.clear {
+  zoom: 1;
+}
+.navbar-brand .bi {
+  color: #523f78;
+}
+.main {
+  margin-top: 56px;
+}
+.main .banner {
+  background: url(../imgs/bs.png) center repeat, linear-gradient(45deg, #020031, #6d3353);
+  height: 470px;
+  background-blend-mode: soft-light;
+}
+.main .banner .container {
+  height: 100% ;
+}
+.main > .container .projects {
+  padding-top: 60px;
+}
+/*# sourceMappingURL=index.css.map */
